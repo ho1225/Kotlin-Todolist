@@ -51,7 +51,7 @@ class TodoAdapter(
             cbDone.isChecked = curTodo.isChecked
             toggleStrikeThrough(tvTodoTitle, curTodo.isChecked)
             cbDone.setOnCheckedChangeListener { _, isChecked ->
-                toggleStrikeThrough(tvTodoTitle, isChecked)
+                toggleStrikeThrough(tvTodoTitle = , isChecked)
                 curTodo.isChecked = !curTodo.isChecked
             }
         }
